@@ -1,6 +1,6 @@
-var hh = 0;
-var mm = 0;
-var ss = 0;
+var hour = 0;
+var minute = 0;
+var seconds = 0;
 
 var time = 1000;
 var cron;
@@ -15,25 +15,29 @@ function pauseCount() {
 
 function stopCount() {
     clearInterval(cron);
-    hh = 0;
-    mm = 0;
-    ss = 0;
+    hour = 0;
+    minute = 0;
+    seconds = 0;
     document.getElementById("counter").innerText = '00:00:00';
 }
 
+function count(elemento) {
+    return elemento < 10 ? '0' + elemento : elemento;
+}
+
 function timer() {
-    ss++
+    seconds++
 
-    if (ss == 60) {
-        ss = 0;
-        mm++
+    if (seconds == 60) {
+        seconds = 0;
+        minute++
     }
 
-    if (mm == 60) {
-        mm = 00;
-        hh++
+    if (minute == 60) {
+        minute = 00;
+        hour++
     }
 
-    var format = (hh < 10 ? '0' + hh : hh) + ':' + (mm < 10 ? '0' + mm : mm) + ':' + (ss < 10 ? '0' + ss : ss);
+    var format = count(hour) + ':' + count(minute) + ':' + count(seconds);
     document.getElementById("counter").innerText = format;
 }
