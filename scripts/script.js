@@ -21,8 +21,8 @@ function stopCount() {
     document.getElementById("counter").innerText = '00:00:00';
 }
 
-function count(elemento) {
-    return elemento < 10 ? '0' + elemento : elemento;
+function count(element) {
+    return element < 10 ? '0' + element : element;
 }
 
 function timer() {
