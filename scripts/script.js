@@ -2,20 +2,20 @@ var hour = 0;
 var minute = 0;
 var seconds = 0;
 
-var time = 1000; // Determina os milisegundos que o contador irá funcionar
+var time = 1000; /* Determina os milisegundos que o contador irá funcionar */
 var cron;
 
-// Iniciar o cronometro
+/* Iniciar o cronometro */
 function startCount() {
     cron = setInterval(timer, time);
 }
 
-// Pausar o cronometro
+/* Pausar o cronometro */
 function pauseCount() {
     clearInterval(cron);
 }
 
-// Zerar o cronometro
+/* Zerar o cronometro */
 function stopCount() {
     clearInterval(cron);
     hour = 0;
@@ -24,12 +24,12 @@ function stopCount() {
     document.getElementById("counter").innerText = '00:00:00';
 }
 
-// Funcao para os digitos ficarem sempre com duas casas decimais
+/* Funcao para os digitos ficarem sempre com duas casas decimais */
 function count(element) {
     return element < 10 ? '0' + element : element;
 }
 
-// Funcao principal do cronometro
+/* Funcao principal do cronometro */
 function timer() {
     seconds++
 
