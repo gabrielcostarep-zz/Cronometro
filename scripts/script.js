@@ -26,7 +26,15 @@ function stopCount() {
 
 /* Funcao para os digitos ficarem sempre com duas casas decimais */
 function count(element) {
+    // Utilizando operador ternario:
     return element < 10 ? '0' + element : element;
+    
+    // Utilizando if
+//     if (element < 10) {
+//         return '0' + element
+//     } else {
+//         element
+//     }
 }
 
 /* Funcao principal do cronometro */
