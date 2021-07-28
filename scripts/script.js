@@ -22,15 +22,7 @@ function stopCount() {
 }
 
 function count(element) {
-    /* Utilizando Operador Ternario */
     return element < 10 ? '0' + element : element;
-
-    /*---- Utilizando if ----*/
-    // if (element < 10) {
-    //     return '0' + element
-    // } else {
-    //     return element
-    // }
 }
 
 function timer() {
