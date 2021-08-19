@@ -3,7 +3,7 @@
 ➡️ [Acesse a página clicando aqui](https://gabrielcostarep.github.io/Cronometro/) ⬅️
 
  <div align="center" >
-  <img src="./Readme-cell-gif.gif" alt="demo-mobile" height="425">
+  <img src="./Readme-cell-gif.gif" alt="demo-mobile" height="500em">
 </div>
 
 ## 🚀 Tecnologias
